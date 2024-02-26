@@ -31,6 +31,7 @@ use App\Http\Controllers\Client\ClientController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('cp-login', [AdminSessionController::class, 'create'])->name('login');
