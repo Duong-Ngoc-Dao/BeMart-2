@@ -35,3 +35,4 @@ use App\Http\Controllers\Client\ClientController;
 //     return view('welcome');
 // });
 Route::get('cp-login', [AdminSessionController::class, 'create'])->name('login');
+Route::post('cp-login', [AdminSessionController::class, 'store'])->name('submitLogin');
