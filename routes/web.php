@@ -36,3 +36,4 @@ use App\Http\Controllers\Client\ClientController;
 // });
 Route::get('cp-login', [AdminSessionController::class, 'create'])->name('login');
 Route::post('cp-login', [AdminSessionController::class, 'store'])->name('submitLogin');
+Route::get('cp-logout', [ClientController::class, 'logout'])->name('logout');
