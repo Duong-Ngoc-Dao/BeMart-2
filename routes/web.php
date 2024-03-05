@@ -38,3 +38,4 @@ Route::get('cp-login', [AdminSessionController::class, 'create'])->name('login')
 Route::post('cp-login', [AdminSessionController::class, 'store'])->name('submitLogin');
 Route::get('cp-logout', [ClientController::class, 'logout'])->name('logout');
 Route::get('cp-register', [ClientController::class, 'register'])->name('register');
+Route::post('cp-register', [ClientController::class, 'registerCreate'])->name('registerCreate');
