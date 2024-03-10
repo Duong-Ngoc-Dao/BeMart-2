@@ -42,3 +42,4 @@ Route::post('cp-register', [ClientController::class, 'registerCreate'])->name('r
 Route::get('quen-mat-khau', [ClientController::class, 'forgetPassword'])->name('forgetPassword');
 Route::post('quen-mat-khau', [ClientController::class, 'SentPassword'])->name('SentPassword');
 Route::get('doi-mat-khau', [ClientController::class, 'ChangePassword'])->name('ChangePassword');
+Route::post('doi-mat-khau', [ClientController::class, 'SentChangePassword'])->name('SentChangePassword');
