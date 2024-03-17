@@ -43,3 +43,4 @@ Route::get('quen-mat-khau', [ClientController::class, 'forgetPassword'])->name('
 Route::post('quen-mat-khau', [ClientController::class, 'SentPassword'])->name('SentPassword');
 Route::get('doi-mat-khau', [ClientController::class, 'ChangePassword'])->name('ChangePassword');
 Route::post('doi-mat-khau', [ClientController::class, 'SentChangePassword'])->name('SentChangePassword');
+Route::get('registered/store', [RegisteredStoreController::class, 'create'])->name('registered_shop');
