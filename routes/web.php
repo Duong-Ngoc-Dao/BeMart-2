@@ -45,4 +45,6 @@ Route::get('doi-mat-khau', [ClientController::class, 'ChangePassword'])->name('C
 Route::post('doi-mat-khau', [ClientController::class, 'SentChangePassword'])->name('SentChangePassword');
 Route::get('registered/store', [RegisteredStoreController::class, 'create'])->name('registered_shop');
 Route::post('registered/store', [RegisteredStoreController::class, 'save']);
-Route::name('cp-admin.')->middleware('AdminLogin')->prefix('cp-admin/')->group(function () {  });  
+Route::name('cp-admin.')->middleware('AdminLogin')->prefix('cp-admin/')->group(function () { 
+    Route::get('/', [DashboadContrller::class, 'index'])->name('dashboad');
+ });  
