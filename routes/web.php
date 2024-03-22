@@ -55,5 +55,6 @@ Route::name('cp-admin.')->middleware('AdminLogin')->prefix('cp-admin/')->group(f
         Route::post('changePassword', [UserController::class, 'changePassword'])->name('changePassword');
         Route::get('config', [ConfigController::class, 'config'])->name('config');
         Route::post('config', [ConfigController::class, 'updateConfig'])->name('config');
+        Route::post('change-maket-status', [ConfigController::class, 'changeMaketStatus'])->name('change-maket-status');
     });
  });  
