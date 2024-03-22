@@ -47,4 +47,8 @@ Route::get('registered/store', [RegisteredStoreController::class, 'create'])->na
 Route::post('registered/store', [RegisteredStoreController::class, 'save']);
 Route::name('cp-admin.')->middleware('AdminLogin')->prefix('cp-admin/')->group(function () { 
     Route::get('/', [DashboadContrller::class, 'index'])->name('dashboad');
+
+    Route::middleware('AdminLogin')->group(function () {
+        
+    });
  });  
