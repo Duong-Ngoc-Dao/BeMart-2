@@ -52,5 +52,6 @@ Route::name('cp-admin.')->middleware('AdminLogin')->prefix('cp-admin/')->group(f
         Route::get('logout', [AdminSessionController::class, 'logout'])->name('logout');
         Route::get('profile', [UserController::class, 'proFile'])->name('profile');
         Route::post('profile', [UserController::class, 'proFileStore'])->name('proFileStore');
+        Route::post('changePassword', [UserController::class, 'changePassword'])->name('changePassword');
     });
  });  
