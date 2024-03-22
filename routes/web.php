@@ -54,5 +54,6 @@ Route::name('cp-admin.')->middleware('AdminLogin')->prefix('cp-admin/')->group(f
         Route::post('profile', [UserController::class, 'proFileStore'])->name('proFileStore');
         Route::post('changePassword', [UserController::class, 'changePassword'])->name('changePassword');
         Route::get('config', [ConfigController::class, 'config'])->name('config');
+        Route::post('config', [ConfigController::class, 'updateConfig'])->name('config');
     });
  });  
