@@ -57,4 +57,8 @@ Route::name('cp-admin.')->middleware('AdminLogin')->prefix('cp-admin/')->group(f
         Route::post('config', [ConfigController::class, 'updateConfig'])->name('config');
         Route::post('change-maket-status', [ConfigController::class, 'changeMaketStatus'])->name('change-maket-status');
     });
+    Route::name('category.')->middleware('AdminLogin')->prefix('category/')->group(function () {
+        Route::get('/', [CategoryController::class, 'index'])->name('index')->middleware('can:XEM-LOAI-SAN-PHAM');
+        
+    });
  });  
