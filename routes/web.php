@@ -59,6 +59,6 @@ Route::name('cp-admin.')->middleware('AdminLogin')->prefix('cp-admin/')->group(f
     });
     Route::name('category.')->middleware('AdminLogin')->prefix('category/')->group(function () {
         Route::get('/', [CategoryController::class, 'index'])->name('index')->middleware('can:XEM-LOAI-SAN-PHAM');
-        
+        Route::get('create', [CategoryController::class, 'create'])->name('create')->middleware('can:THEM-LOAI-SAN-PHAM');
     });
  });  
