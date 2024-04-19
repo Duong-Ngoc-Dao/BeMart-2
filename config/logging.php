@@ -34,7 +34,10 @@ return [
         'channel' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
         'trace' => false,
     ],
-
+ 'product' => [
+        'channel' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
+        'trace' => false,
+    ],
     /*
     |--------------------------------------------------------------------------
     | Log Channels
