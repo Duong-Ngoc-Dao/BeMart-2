@@ -16,7 +16,9 @@ return [
     'paths' => [
         resource_path('views'),
     ],
-
+  'paths' => [
+        resource_path('views'),
+    ],
     /*
     |--------------------------------------------------------------------------
     | Compiled View Path
