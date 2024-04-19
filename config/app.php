@@ -29,7 +29,7 @@ php
     */
 
     'env' => env('APP_ENV', 'production'),
-
+ 'env' => env('APP_ENV', 'production'),
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
